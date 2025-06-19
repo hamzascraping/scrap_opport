@@ -17,8 +17,8 @@ from google.cloud import bigquery
 DIV_CLASS_NAME = "d4a98186ec"
 URL = "https://www.booking.com/searchresults.fr.html?label=metagha-link-LUFR-hotel-470750_dev-desktop_los-1_bw-2_dow-Friday_defdate-1_room-0_gstadt-2_rateid-public_aud-0_gacid-17490061106_mcid-10_ppa-1_clrid-0_ad-1_gstkid-0_checkin-20240628_ppt-&sid=0eb90c0c3d736f438381a1729cf346ef&aid=356931&ss=Paris&ssne=Paris&ssne_untouched=Paris&efdco=1&lang=en-gb&src=searchresults&dest_id=-1456928&dest_type=city&checkin=2024-11-06&checkout=2024-11-07&group_adults=2&no_rooms=1&group_children=0&nflt=ht_id%3D204"
 PROJECT_ID = "korner-datalake"
-TABLE_ID_1 = "KornerScraper_HotelsAvailability.Arrondissement"
-TABLE_ID_2 = "KornerScraper_HotelsAvailability.ArrondissementSummary"
+TABLE_ID_1 = "Test.Arrondissement"
+TABLE_ID_2 = "Test.ArrondissementSummary"
 
 
 # Write the credentials JSON content from environment variable to a file

@@ -30,6 +30,7 @@ pyasn1-modules
 rsa
 cachetools
 packaging
+db_dtypes
 
 # Selenium
 selenium

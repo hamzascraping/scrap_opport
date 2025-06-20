@@ -5,7 +5,7 @@ pandas-gbq==0.15.0
 requests==2.26.0
 google-auth==2.3.0
 google-api-python-client==2.33.0
-chromedriver-autoinstaller==0.2.2  # For automatically installing the appropriate ChromeDriver version
+chromedriver-autoinstaller==0.2.2
 attrs==25.1.0
 cachetools==5.5.2
 certifi==2025.1.31

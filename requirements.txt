@@ -27,6 +27,7 @@ urllib3
 requests
 pyasn1
 pyasn1-modules
+rsa
 
 # Selenium
 selenium

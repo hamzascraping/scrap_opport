@@ -40,5 +40,5 @@ jobs:
 
       - name: Run scraper script
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS_FILE }}
+          GOOGLE_APPLICATION_CREDENTIALS: gcp_key.json
         run: python scraper_opportunities.py

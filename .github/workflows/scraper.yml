@@ -34,6 +34,9 @@ jobs:
 
       - name: Setup Chrome for Selenium
         uses: browser-actions/setup-chrome@v1
+        
+      - name: Write GCP credentials to file
+        run: echo "${{ secrets.GCP_CREDENTIALS_JSON }}" > gcp_key.json
 
       - name: Run scraper script
         env:

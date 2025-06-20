@@ -117,3 +117,5 @@ def booking_properties_to_bq():
 
     #Close the WebDriver
     driver.quit()
+
+booking_properties_to_bq()

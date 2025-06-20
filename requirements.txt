@@ -15,3 +15,4 @@ idna
 google-api-core
 googleapis-common-protos
 protobuf
+google-auth

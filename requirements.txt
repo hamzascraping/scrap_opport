@@ -28,6 +28,7 @@ requests
 pyasn1
 pyasn1-modules
 rsa
+cachetools
 
 # Selenium
 selenium

@@ -26,6 +26,7 @@ idna
 urllib3
 requests
 pyasn1
+pyasn1-modules
 
 # Selenium
 selenium

@@ -36,7 +36,10 @@ jobs:
         uses: browser-actions/setup-chrome@v1
         
       - name: Write GCP credentials to file
-        run: echo "${{ secrets.GCP_CREDENTIALS_JSON }}" > gcp_key.json
+        run: |
+          cat <<EOF > gcp_key.json
+          ${{ secrets.GCP_CREDENTIALS_JSON }}
+          EOF
 
       - name: Run scraper script
         env:

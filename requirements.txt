@@ -11,3 +11,4 @@ certifi
 urllib3
 typing_extensions
 requests
+idna

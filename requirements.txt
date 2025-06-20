@@ -32,7 +32,7 @@ cachetools
 packaging
 pyarrow
 db_dtypes
-websocket
+websocket-client
 
 # Selenium
 selenium

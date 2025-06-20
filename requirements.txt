@@ -1,13 +1,30 @@
+# Core packages
+pandas
+pandas-gbq
+numpy
+
+# Google Cloud
 google-cloud-bigquery
 google-cloud-core
 google-auth
 google-api-core
-pandas
-pandas-gbq
-selenium
-certifi
-idna
-typing-extensions
-six
+googleapis-common-protos
+google-cloud-storage
+protobuf
+grpcio
+google-resumable-media
+google-crc32c
+google-cloud-bigquery-storage
+
+# Utility libraries
 python-dateutil
 pytz
+six
+typing-extensions
+certifi
+idna
+urllib3
+requests
+
+# Selenium
+selenium

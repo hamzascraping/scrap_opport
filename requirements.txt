@@ -14,4 +14,4 @@ requests
 idna
 google-api-core
 googleapis-common-protos
-google.protobuf
+protobuf

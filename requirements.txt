@@ -25,6 +25,7 @@ certifi
 idna
 urllib3
 requests
+pyasn1
 
 # Selenium
 selenium

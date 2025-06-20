@@ -20,17 +20,6 @@ PROJECT_ID = "korner-datalake"
 TABLE_ID_1 = "Test.Arrondissement"
 TABLE_ID_2 = "Test.ArrondissementSummary"
 
-
-# Write the credentials JSON content from environment variable to a file
-credentials_json = os.environ.get("GCP_CREDENTIALS_FILE")
-if credentials_json:
-    with open("gcp_key.json", "w") as f:
-        f.write(credentials_json)
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key.json"
-else:
-    raise Exception("Missing GCP_CREDENTIALS_FILE environment variable")
-
-
 # Initialize BigQuery Client
 
 def init_driver():

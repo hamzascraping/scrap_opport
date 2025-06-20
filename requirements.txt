@@ -29,6 +29,7 @@ pyasn1
 pyasn1-modules
 rsa
 cachetools
+packaging
 
 # Selenium
 selenium

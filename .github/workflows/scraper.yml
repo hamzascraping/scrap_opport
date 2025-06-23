@@ -42,6 +42,9 @@ jobs:
       - name: Check secret length
         run: echo "${{ secrets.GCP_CREDENTIALS_JSON }}" | wc -c
 
+      - name: Check test secret length
+        run: echo "${{ secrets.TEST_SECRET }}" | wc -c
+
       - name: Run scraper script
         env:
           GOOGLE_APPLICATION_CREDENTIALS: gcp_key.json

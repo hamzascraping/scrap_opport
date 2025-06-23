@@ -39,11 +39,9 @@ jobs:
         run: |
           echo "${{ secrets.GCP_CREDENTIALS_JSON }}" > gcp_key.json
 
-      - name: Check secret length
-        run: echo "${{ secrets.GCP_CREDENTIALS_JSON }}" | wc -c
-
-      - name: Check test secret length
-        run: echo "${{ secrets.TEST_SECRET }}" | wc -c
+      - name: Check JSON validity
+        run: |
+          python -c "import json; json.load(open('gcp_key.json'))"
 
       - name: Run scraper script
         env:

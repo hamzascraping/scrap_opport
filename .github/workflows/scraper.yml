@@ -39,12 +39,8 @@ jobs:
         run: |
           echo "${{ secrets.GCP_CREDENTIALS_JSON }}" > gcp_key.json
 
-      - name: Debug gcp_key.json
-        run: |
-          echo "File info:"
-          file gcp_key.json
-          echo "First 10 lines of gcp_key.json:"
-          head -n 10 gcp_key.json
+      - name: Check secret length
+        run: echo "${{ secrets.GCP_CREDENTIALS_JSON }}" | wc -c
 
       - name: Run scraper script
         env:

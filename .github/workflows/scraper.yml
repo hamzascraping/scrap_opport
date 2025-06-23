@@ -31,6 +31,8 @@ jobs:
       - name: Install other Python dependencies without dependencies (to avoid reinstalling numpy)
         run: |
           pip install -r requirements.txt --no-deps
+          pip install pandas-gbq pydata-google-auth charset-normalizer
+
 
       - name: Setup Chrome for Selenium
         uses: browser-actions/setup-chrome@v1

@@ -2,7 +2,6 @@
 pandas
 pandas-gbq
 numpy
-pydata-google-auth==1.9.1
 
 # Google Cloud
 google-cloud-bigquery

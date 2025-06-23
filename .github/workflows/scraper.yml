@@ -37,7 +37,7 @@ jobs:
 
       - name: Write GCP credentials to file
         run: |
-          echo '${{ secrets.GCP_CREDENTIALS_JSON }}' > gcp_key.json
+          echo "${{ secrets.GCP_CREDENTIALS_JSON }}" > gcp_key.json
 
       - name: Run scraper script
         env:

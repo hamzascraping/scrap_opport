@@ -38,13 +38,13 @@ jobs:
       - name: Create Google Services JSON File
         env:
           GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
-        run: echo $GOOGLE_SERVICES_JSON | base64 -di > ./<folder>/google-services.json
+        run: echo $GOOGLE_SERVICES_JSON | base64 -di > google-services.json
 
       - name: Check JSON validity
         run: |
-          python -c "import json; json.load(open('gcp_key.json'))"
+          python -c "import json; json.load(open('google-services.json'))"
 
       - name: Run scraper script
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: gcp_key.json
+          GOOGLE_APPLICATION_CREDENTIALS: google-services.json
         run: python scraper_opportunities.py
